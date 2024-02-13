@@ -22,7 +22,7 @@ title: Monsta Cave of the Mips
 email: yaojintham@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Life's musings, fun's manifestation and some codes to soothe the soul.
-baseurl: /docs # the subpath of your site, e.g. /blog
+baseurl: /docs/ # the subpath of your site, e.g. /blog
 url: https://mipsmonsta.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: #
 github_username: #
