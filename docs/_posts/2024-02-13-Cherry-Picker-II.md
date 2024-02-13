@@ -9,7 +9,7 @@ categories: python, Leetcode, Dynamic-Programming
 
 In [Cherry Picker II], we are given a grid of rows and columns for two robots to go down row by row, with the starting position of the robotos at row 0 and column 0 and row 0 and column n-1 (given n columns). The question is asking to pick up the *maximum* number of cherry that can be picked up until and inclusive of the cherry at row m - 1 (given m rows).
 
-![Two Robots as Cherry Pickers. Image from Leetcode.com](/assets/images/two_robots.png)
+![Two Robots as Cherry Pickers](/assets/images/two_robots.png "Image from Leetcode.com. TWo robotos cherry pickers.")
 
 ### Analysis of constraints
 
