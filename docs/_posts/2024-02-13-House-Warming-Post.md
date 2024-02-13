@@ -2,7 +2,7 @@
 layout: post
 title: House-warming Post
 date: 2024-02-13 14:22:50 +0800
-categories: Housekeeping, Blog Related
+categories: Housekeeping, Blog-Related
 ---
 
 We all need to start somewhere are here is my start. Looking forward to be re-reading the first post and see that my aim of embarking on the blog is fulfiled.
