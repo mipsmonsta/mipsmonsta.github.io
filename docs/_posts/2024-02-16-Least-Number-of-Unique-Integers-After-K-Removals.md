@@ -36,7 +36,7 @@ The time complexity due to the sorting of the freqencies of the characters will 
 
 ### Counting Sort - Frequency of frequencies
 
-Turns out yes. We still use a dictionary or Counter to record the count each unique characters. Then we take things to the second order by counting the count or record the frequency of the frequencies.So if there are 3 counts of `1` and 3 counts of `2`, then frequncyCounter[3] = 2. We can traverse the frequency from 1 to n (why n - which is the size of the array of input integers? Because worst case is all the integer elements in the input array are unique) and decide how many unique character count can be removed. The latter is given by the following formula:
+Turns out yes. We still use a dictionary or Counter to record the count each unique characters. Then we take things to the second order by counting the count or record the frequency of the frequencies. So if there are 3 counts of `1` and 3 counts of `2`, then frequncyCounter[3] = 2. We can traverse the frequency from 1 to n (why n - which is the size of the array of input integers? Because worst case is all the integer elements in the input array are unique) and decide how many unique character count can be removed. The latter is given by the following formula:
 
 ```python
 removeCharacterCount = min(k//freq, freqencyCounter[freq])
