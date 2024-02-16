@@ -23,7 +23,7 @@ the frequencies in ascending order. And at each frequency, we see if k is bigger
 if so, we remove one unique character. If not, we know we cannot remove more unqiue characters since the following  
 frequencies will be of even larger magnitude. The algorithm in Python is as follows:
 
-```Python
+```python
 class Solution:
     def findLeastNumOfUniqueInts(self, arr: List[int], k: int) -> int:
         nCounter = Counter(arr)
@@ -49,13 +49,13 @@ the count or record the frequency of the frequencies.So if there are 3 counts of
 traverse the frequency from 1 to n (why n - which is the size of the array of input integers? Because worst case is all the integer elements  
 in the input array are unique) and decide how many unique character count can be removed. The latter is given by the following formula:
 
-```Python
+```python
 removeCharacterCount = min(k//freq, freqencyCounter[freq])
 ```
 
 The full python code for the algorithm is
 
-```Python
+```python
 class Solution:
     def findLeastNumOfUniqueInts(self, arr: List[int], k: int) -> int:
         counter = Counter(arr) # frequency of characters
