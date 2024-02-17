@@ -3,7 +3,7 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <image src="/assets/images/cave.png" width=50"/>
+    <image src="/assets/images/cave.png" width=80"/>
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     
     {%- if page_paths -%}
