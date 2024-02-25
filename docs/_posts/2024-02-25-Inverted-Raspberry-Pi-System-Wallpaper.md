@@ -15,7 +15,7 @@ The files are installed in the `/usr/share/rpd-wallpaper` folder.
 
 One of my favourite one is the RPiSystem wallpaper but it only comes in white. For the users wanting a dark version, here's it is:
 
-<image src="/assets/images/RPiSystem_Dark.png" width=120/>
+<image src="/assets/images/RPiSystem_Dark.png" width=640/>
 
 Now you can have that perfect dark mode.
 
