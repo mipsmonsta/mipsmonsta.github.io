@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dark Raspberry Pi Wallpaper
-date: 2025-02-25 09:12:20 +0800
+date: 2024-02-25 09:12:20 +0800
 categories: raspberrypi, wallpaper
 ---
 
