@@ -36,4 +36,4 @@ filePath = os.path.join(PATHDIR, "../../",CONFIG_FILE_NAME)
 
 The resolving up the parent folers are given by `../../` pattern. 
 
-Hence, when we have complicated file structures and we need to navigate our way around, that's where some os module code, `__File__` and our good old DOS/Bash directory patterns will help will help.
+Hence, when we have complicated file structures and we need to navigate our way around, that's where some os module code, `__File__` and our good old DOS/Bash directory patterns will help.
