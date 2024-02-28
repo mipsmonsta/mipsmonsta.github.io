@@ -14,9 +14,9 @@ The definition of diameter is the longest chain of nodes, not neccesarily passin
 
 The key insight is to recognise that at a particular node, we need to know the height of the left sub-tree and the height of the right sub-tree. The node being the parent node will link up and form the chain of edges and the sum of the height of the left and right sub-trees *give* the number of edges. (See code segment A)
 
-<img src="/assets/images/height_tree.jpg"  width=100 />
+<img src="/assets/images/height_tree.jpg"/>
 
-Another insight needed is that for the same particular parent node, if the edges are not the longest, the node with the right sub-tree or node with the left sub-tree will form part of the chain for the parent of the parent node. (See code segment B)
+Another insight needed is that for the same particular parent node, if the edges are not the longest, the node with the right sub-tree or node with the left sub-tree will form prt of the chain for the parent of the parent node. (See code segment B)
 
 ### Code to tell all
 
