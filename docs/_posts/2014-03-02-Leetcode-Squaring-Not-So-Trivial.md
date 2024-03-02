@@ -7,7 +7,7 @@ categories: python, Leetcode, Two-Pointers
 
 ### Trivial problem it is not
 
-In this leetcode question 977: [Squares of a Sorted Array], the problem asked that you return a non-decreasing array of squares after squaring the input integer elements that are given as a non-decreasing array. Question is marked as easy since you could just do element-wise squaring and sorted the resultant array. Trivial.
+In this leetcode question 977: [Squares of a Sorted Array], the problem asked that you return a non-decreasing array of squares after squaring the input integer elements that are given as a non-decreasing array. Question is marked as easy since you could just do element-wise squaring and sort the resultant array. Trivial.
 
 ### But the catch is the follow-on
 
