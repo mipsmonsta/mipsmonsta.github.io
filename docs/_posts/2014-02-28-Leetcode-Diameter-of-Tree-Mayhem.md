@@ -10,9 +10,9 @@ categories: python, Leetcode, Binary tree traversal
 In this [leetcode] question, we are asked to find the diameter of a binary tree, given the root node.
 The definition of diameter is the longest chain of nodes, not neccesarily passing through the root, in terms of the count of edges for such a chain. This is marked as an easy question, but it's clearly not so simple.
 
-### Insight for breakthrough
+### Insights for breakthrough
 
-The key insight is to recognise that at a particular node, we need to know the height of the left sub-tree and the height of the right sub-tree. The node being the parent node will link up and form the chain of edges and the sum of the height of the left and right sub-trees *give* the number of edges. (See code segment A)
+The key insight is to recognise that at a particular node, we need to know the height of the left sub-tree and the height of the right sub-tree. The node being the parent node will link up and form the chain of edges and the sum of the height of the left and right sub-trees *give* the number of edges (See code segment A).
 
 <img src="/assets/images/height_tree.jpg" width=200/>
 
@@ -20,7 +20,7 @@ Another insight needed is that for the same particular parent node, if the edges
 
 ### Code to tell all
 
-Like most binary tree questions we use DFS but modify the dfs function to record the longest chain of edges when processing a particular node. 
+Like most binary tree questions we use DFS but modify the DFS function to record the longest chain of edges when processing a particular node. Code shows what I mean.
 
 ```python
 class Solution:
