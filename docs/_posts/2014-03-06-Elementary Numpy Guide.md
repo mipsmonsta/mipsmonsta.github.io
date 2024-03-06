@@ -181,4 +181,18 @@ print(np.sort(a, axis=0))
 
 ```
 
-To continue ... 
+### Argsort vs sort
+
+In sort, we are sorting the elements and get a re-arranged array. With `np.argsort` we get an array
+of indices (of the elements) as if its sorted.   
+
+
+```python
+a = np.array([10, 1, 2, 3], dtype="float")
+print(np.sort(a))
+# output: [ 1.  2.  3. 10.]
+
+
+print(np.argsort(a))
+# output: [ 1 2 3 0]
+```
