@@ -128,3 +128,12 @@ sat_scores = np.array([1100, 1256, 1543, 1043, 989, 1412, 1343])
 students = np.array(["John", "Bob", "Alice", "Joe", "Jane", "Frank", "Carl"])
 top_3 = students[np.argsort(sat_scores)][-1:-4:-1]
 print(top_3)
+
+# argsort
+a = np.array([10, 1, 2, 3], dtype="float")
+print(np.sort(a))
+# output: [ 1.  2.  3. 10.]
+
+
+print(np.argsort(a))
+# output: [ 1 2 3 0]
