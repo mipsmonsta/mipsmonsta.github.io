@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elementary Numpy Guide
+title: Python Regular Expression Guide
 date: 2024-03-07 21:52 +0800
 categories: python, regular expression, guide
 ---
