@@ -161,6 +161,6 @@ print(re.findall(pattern2, html))
 
 `\s` matches `[\t\r\n\f]`.
 
-That's all for now. I learn the Python Regular express best from the book [Python One-Liners], check it out.
+That's all for now. I learn the Python Regular Expression best from the book [Python One-Liners], check it out.
 
 [Python One-Liners]: https://nostarch.com/pythononeliners
