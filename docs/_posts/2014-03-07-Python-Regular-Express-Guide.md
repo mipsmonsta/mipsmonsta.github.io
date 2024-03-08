@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python Regular Expression Guide
+title: Python Regular Expression Guide in Reverse
 date: 2024-03-07 21:52 +0800
 categories: python, regular expression, guide
 ---
@@ -64,4 +64,101 @@ Inverse is also possible, i.e. add a symbol right after the left bracket to mean
 [^0-3a-c] will now match with '445' and '44ee'.
 ```
 
-To continue...
+### Function differences - match, search, findall and fullmatch
+
+Match will only match from the beginning. So if your match to your pattern is embedded not at the beginning, `re.match` will return `None`. Fullmatch is quite similar except match will need to match from begining and end.
+
+You can see how match works in the two examples below. First example pattern will match while the second is a dud.
+
+```python
+pattern = 'I saw Mummy'
+text = 'I saw Mummy kissing Santa'
+print(re.match(pattern, text))
+# ouput: <re.Match object; span=(0, 11), match='I saw Mummy'>
+
+pattern = 'saw Mummy'
+text = 'I saw Mummy kissing Santa'
+print(re.match(pattern, text))
+# output: None
+
+```
+
+In contrast, if you are using `re.search`, it will find the first occurence of the pattern.
+
+```python
+pattern = 'saw Mummy'
+text = 'I saw Mummy kissing Santa'
+print(re.search(pattern, text))
+# output: <re.Match object; span=(2, 11), match='saw Mummy'>
+
+```
+
+Findall as the name sakes will match all matches. But it returns the matches as list of strings and hence miss out on the span information. So you cannot say use the span to highlight or color the letters.
+
+```python
+pattern = '([^\s]+(?P<duplicate>[^\s])(?P=duplicate)[^\s]+)'
+text = 'I saw Mummy kissing Santa'
+print(re.findall(pattern, text))
+# output: [('Mummy', 'm'), ('kissing', 's')]
+
+```
+
+### Reusing patterns in your bigger code base
+
+Unlike named groups that allow reusing patterns within pattern, we want to use same pattern across our codes. We do that we `re.compile`. Just like code compilation, we can reuse.
+
+```python
+
+pattern = re.compile("\w{1,3}coin")
+print(pattern.match('dogcoin'))
+print(pattern.match('bitcoin'))
+print(pattern.match('acoin'))
+```
+
+## Basics - The regex primitives
+
+### The Dot
+
+`.` in a pattern means match a character, including whitespaces.
+
+### The Asterix
+
+`*` is used in conjuction as a modifier after a character or dot or whitespace `.`. E.g. `.*` or `4*`.
+
+```python
+pattern = "number 4*0?"
+text = "<number 44 is ten times less than number 440"
+print(re.findall(pattern, text))
+#output: ['number 44', 'number 440']
+
+```
+
+### Zero-or-one
+
+`?` is used in conjuction as a modifier after a character or dot or whitespace to mean "zero or one" such character ...
+
+But it has a *special meaning* when used as a component `*?` e.g. `.*?`, it means Python searches for a minimal number of arbitrary characters i.e. **non-greedy*. Notice how greedy pattern 2 is in example below.
+
+```python
+pattern = "<.*?>"
+pattern2 = "<.*>"
+html = "<a href=https://mipsmonsta.github.io>Cave of Mipsmonsta</a>"
+print(re.findall(pattern, html))
+# output: ['<a href=https://mipsmonsta.github.io>', '</a>']
+print(re.findall(pattern2, html))
+# output: ['<a href=https://mipsmonsta.github.io>Cave of Mipsmonsta</a>']
+```
+
+### Word character
+
+`\w` matches a word character which are `[a-zA-Z_0-9]` from character class perspective.
+
+### Digit character
+
+`\d` matches a digit `[0-9]`.
+
+### Whitespace characters
+
+`\s` matches `[\t\r\n\f]`.
+
+That's all for now.
