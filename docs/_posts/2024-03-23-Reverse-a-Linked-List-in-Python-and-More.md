@@ -7,10 +7,11 @@ categories: python, Leetcode, linkedlist
 
 ## Introduction
 
-To effectively solved Linked List related questions on Leetcode, you need to know basic operations on a Linked List. With practise and learning this post, you will become proficent. 
+To effectively solve Linked List related questions on Leetcode, you need to know basic operations on a Linked List. With practise, you will become proficent. But reading this post will help to provide you the knowledge. You could use try what you learn in questions such as [Palindrome Linked List] and [Reorder List].
+
 
 ### How do you reverse nodes of a Linked List?
-Given a Linked List made of `ListNode` (structure below) in the form of the head node, how do you easily reverse the nodes of the list?
+Given a Linked List made of `ListNode` (structure below) and the the head node, how do you easily reverse the nodes of the list?
 
 ```python
 class ListNode:
@@ -20,11 +21,10 @@ class ListNode:
 ```
 
 
-You need to do it fast with one-pass. This requirement would be a essential and basic skill you need to have to solve LinkedList questions on leetcode. Example: you could use it in [Palindrome Linked List], 
+The preamble is that you need to do it fast with one-pass. 
 
 
-
-### Idea - Have None/Empty Node that is the prev node to point to from the current node
+### Idea - Start off with a `None` node as a Previous Node
 
 ```python
 prevNode = None
@@ -38,11 +38,11 @@ while curr:
 head = prevNode # the head of the reversed list2
 ```
 
-Traverse node by node. For each node, remember the next node. Then set the next pointer of the current node to the previous node which is None at first. Then in set the previous node to point to the current node. At the end of the reversal of all the nodes, previous node would become the new head node.
+Traverse node by node. For each node, remember the next node pointed by the `next` pointer. Then set the `next` pointer of the current node to the `previous` node which is `None` at first. After which, set the `previous` node to point to the current node. At the end of the traversal of all the nodes, the `previous` node would become the new head node.
 
 ### How do you find the mid node of a Linked List?
 
-Pre-requisite is there there are at least two nodes or more in the Linked List. If so you use two variables to hold the nodes as they are iterated - `fast` and `slow` pointers. How it works is that for every iteration, you advance `fast` pointer twice as fast by iterating to next pointer and then the next of the next pointer.
+Pre-requisite of the input Linked List is there there are at least two nodes or more in the list. If so you use two variables to point to the nodes as they are iterated - `fast` and `slow` pointers. How it works is that for every iteration, you advance `fast` pointer twice as fast by iterating to next pointer and then the next of the next pointer.
 
 See the python code and digests it:
 
