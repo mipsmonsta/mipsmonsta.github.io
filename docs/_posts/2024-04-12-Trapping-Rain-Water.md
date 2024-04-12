@@ -15,16 +15,16 @@ Imagine you are at position i, the water level is determined by the minimum of t
 
 The one math equation as aforementioned can be conceived: 
 
-'''
+```
 water height at i = max(min(max_wall_left, max_wall_right) - height[i], 0)
 
-'''
+```
 
 Now what is left is finding the max wall height to the left and to the right.
 
 ### Code 
 
-'''python
+```python
 
 class Solution:
     def trap(self, height: List[int]) -> int:
@@ -43,6 +43,6 @@ class Solution:
             totalWater += waterheightAtI
 
         return totalWater
-'''
+```
 
 The hard problem is not that tough once you have the insights.
