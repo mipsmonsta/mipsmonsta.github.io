@@ -22,6 +22,10 @@ water height at i = max(min(max_wall_left, max_wall_right) - height[i], 0)
 
 Now what is left is finding the max wall height to the left and to the right.
 
+See the diagram to have a initutive feel.
+
+![Water Level Diagram](/assets/images/Water.jpg)
+
 ### Code 
 
 ```python
