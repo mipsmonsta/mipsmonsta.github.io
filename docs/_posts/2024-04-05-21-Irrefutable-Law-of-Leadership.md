@@ -5,6 +5,7 @@ date: 2024-04-05 11:13 +0800
 categories: book, leadership
 ---
 
+# Notable Laws from 21 Irrefutable Law of Leadership
 
 ### Law of Buy-In
 
