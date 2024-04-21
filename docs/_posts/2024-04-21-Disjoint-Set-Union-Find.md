@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Structure: Disjoint Set or Union Find
+title: Data Structure - Disjoint Set or Union Find
 date: 2024-04-21 22:57 +0800
 categories: python, data structure
 ---
