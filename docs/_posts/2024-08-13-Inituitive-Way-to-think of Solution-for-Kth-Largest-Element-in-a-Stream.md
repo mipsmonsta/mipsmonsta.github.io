@@ -2,7 +2,7 @@
 layout: post
 title: Intuitive Way to think of solution for Kth Largest Element in a Stream (Leetcode problem 704)
 date: 2024-08-13 08:00:00 +0800
-categories: python, Leetcode, Re-Root-Technique
+categories: python, Leetcode,
 ---
 
 ## Intiutive Way to think about Solution
