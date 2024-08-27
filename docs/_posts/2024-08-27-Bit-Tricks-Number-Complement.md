@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Finding the Number Complement (Leetcode 476)
-date: 2024-08-27 18:18:00 +0800
+date: 2024-08-27 08:18:00 +0800
 categories: leetcode, python
 ---
 
