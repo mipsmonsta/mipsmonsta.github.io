@@ -85,5 +85,6 @@ for i in range(n):
 # pairs variables hold the answer
 
 ```
+You will see this idea used in Leetcode question [2537 Count of the Number of Good Subarrays].
 
-
+[2537 Count of the Number of Good Subarrays]: https://leetcode.com/problems/count-the-number-of-good-subarrays/description/?envType=daily-question&envId=2025-04-16
